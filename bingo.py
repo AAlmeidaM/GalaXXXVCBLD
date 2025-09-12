@@ -74,7 +74,7 @@ st.markdown(
 
 # Función para reiniciar el bingo
 def resetear_bingo():
-    st.session_state.numeros = list(range(1, 91))
+    st.session_state.numeros = list(range(1, 100))
     random.shuffle(st.session_state.numeros)
     st.session_state.salidos = []
 
@@ -129,3 +129,4 @@ with col2:
         if i % 10 == 0:
             tablero += "<br>"
     st.markdown(tablero, unsafe_allow_html=True)
+
