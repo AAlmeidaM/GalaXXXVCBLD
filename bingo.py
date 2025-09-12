@@ -121,7 +121,7 @@ with col1:
 with col2:
     st.markdown("### Tablero de Bingo")
     tablero = ""
-    for i in range(1, 91):
+    for i in range(1, 100):
         clase = "numero"
         if i in st.session_state.salidos:
             clase += " numero-salido"
@@ -129,4 +129,5 @@ with col2:
         if i % 10 == 0:
             tablero += "<br>"
     st.markdown(tablero, unsafe_allow_html=True)
+
 
